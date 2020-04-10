@@ -1,4 +1,4 @@
-package com.automation.bases;
+package com.automation.pages;
 
 import com.automation.utilities.BrowserUtils;
 import com.automation.utilities.Driver;
@@ -10,7 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 //This class will be extended by page classes
 //Ant common webElements/locators can be stored here

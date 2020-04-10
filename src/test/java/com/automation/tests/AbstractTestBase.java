@@ -1,5 +1,8 @@
-package com.automation.bases;
+package com.automation.tests;
 
+import com.automation.utilities.BrowserUtils;
+import com.automation.utilities.ConfigurationReader;
+import com.automation.utilities.Driver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -7,9 +10,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
 
 import java.io.IOException;
 
