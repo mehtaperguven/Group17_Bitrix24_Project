@@ -2,15 +2,14 @@ package com.automation.tests;
 
 
 import com.automation.pages.LoginPage;
-import com.automation.pages.main.MainPage;
+import com.automation.pages.main.ActivityStream;
 import com.automation.utilities.BrowserUtilities;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TopicIconTest extends AbstractBaseTest {
     LoginPage loginPage = new LoginPage();
-    MainPage mainPage = new MainPage();
+    ActivityStream activityStream = new ActivityStream();
     @Test
     public void topicIcon_test(){
         extentTest = extentReports.createTest("Verify Post Topic");
@@ -19,11 +18,11 @@ public class TopicIconTest extends AbstractBaseTest {
         BrowserUtilities.wait(3);
         //System.out.println(driver.getTitle());
         //driver.findElement(By.xpath("//tbody//span[text()='Message']")).click();
-        mainPage.clickToSendMessage();
+        activityStream.clickToSendMessage();
         BrowserUtilities.wait(3);
-        mainPage.clickToTopicIcon();
+        activityStream.clickToTopicIcon();
         BrowserUtilities.wait(3);
-        String topicTitle = mainPage.getTopicInTitleText();
+        String topicTitle = activityStream.getTopicInTitleText();
         System.out.println("topicTitle = " + topicTitle);
         Assert.assertEquals(topicTitle,"Topic");
         extentTest.pass("Topic Title verified");

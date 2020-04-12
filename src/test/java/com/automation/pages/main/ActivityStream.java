@@ -5,7 +5,7 @@ import com.automation.utilities.BrowserUtilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MainPage extends AbstractBasePage {
+public class ActivityStream extends AbstractBasePage {
 
     @FindBy(xpath = "//tbody//span[text()='Message']")
     private WebElement sendMessage;
