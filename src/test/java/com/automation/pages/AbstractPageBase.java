@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class AbstractPageBase {
 protected WebDriver driver= Driver.getDriver();
 protected WebDriverWait wait=new WebDriverWait(driver,15);
-@FindBy(css = "#user-menu>a")
+@FindBy(css = "#user-name")
 protected WebElement currentUser;//this user name is same for all pages when we login
 
 public AbstractPageBase(){
