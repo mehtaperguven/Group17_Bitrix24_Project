@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class BrowserUtils {
+public class BrowserUtilities {
 
     public static void wait(int seconds){
 

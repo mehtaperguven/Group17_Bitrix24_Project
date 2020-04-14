@@ -1,6 +1,6 @@
 package com.automation.pages;
 
-import com.automation.utilities.BrowserUtils;
+import com.automation.utilities.BrowserUtilities;
 import com.automation.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +26,7 @@ public AbstractPageBase(){
 
 
     public String getCurrentUserName(){
-        BrowserUtils.waitForPageToLoad(10);
+        BrowserUtilities.waitForPageToLoad(10);
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#user-menu>a")));
         wait.until(ExpectedConditions.visibilityOf(currentUser));
         return currentUser.getText().trim();
@@ -46,13 +46,13 @@ public void navigateTo(String tabName, String moduleName){
     WebElement moduleElement = driver.findElement(By.xpath(moduleXpath));
 
     Actions actions=new Actions(driver);
-    BrowserUtils.wait(4);
+    BrowserUtilities.wait(4);
 
     actions.moveToElement(tabElement).
             pause(2000).
             click(moduleElement).
             build().perform();
-    BrowserUtils.wait(4);
+    BrowserUtilities.wait(4);
 }
 
 }
