@@ -37,7 +37,6 @@ public AbstractBasePage(){
 
     PageFactory.initElements(driver,this);
 }
-
 public void navigateTo(String component){
     String locator = "//span[contains(text(),'" + component + "')]";
     wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator))).click();

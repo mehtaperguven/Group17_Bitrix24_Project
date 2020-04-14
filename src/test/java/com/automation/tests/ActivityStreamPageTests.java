@@ -28,4 +28,5 @@ public class ActivityStreamPageTests extends AbstractBaseTest {
         Assert.assertEquals(topicTitle,"Topic");
         extentTest.pass("Topic Title verified");
     }
+
 }
