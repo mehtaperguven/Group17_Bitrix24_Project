@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public abstract class AbstractBasePage {
+public abstract class AbstractBasePageDONT_TOUCH {
 protected WebDriver driver= Driver.getDriver();
 protected WebDriverWait wait=new WebDriverWait(driver,15);
 
@@ -33,7 +33,7 @@ protected WebElement currentUser;
 @FindBy(id = "bx-help-block")
 protected WebElement helpBtn;
 
-public AbstractBasePage(){
+public AbstractBasePageDONT_TOUCH(){
 
     PageFactory.initElements(driver,this);
 }

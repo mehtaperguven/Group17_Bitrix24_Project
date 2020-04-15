@@ -1,7 +1,7 @@
-package com.automation.tests;
+package com.automation.tests.activityStreamTests;
 
-import com.automation.pages.AbstractPageBase;
-import com.automation.pages.LoginPageME;
+import com.automation.pages.LoginPage;
+import com.automation.tests.AbstractBaseTestDONT_TOUCH;
 import com.automation.utilities.BrowserUtilities;
 import com.automation.utilities.ConfigurationReader;
 import com.automation.utilities.Driver;
@@ -15,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ActivityStreamMessageTestME extends AbstractPageBase {
+public class ActivityStreamMessageTestME extends AbstractBaseTestDONT_TOUCH {
 
 
     protected WebDriverWait wait;
@@ -36,7 +36,7 @@ public class ActivityStreamMessageTestME extends AbstractPageBase {
     public void test1(){
         //send message, if you send more than 1 same message verify that warning message appears
 
-        LoginPageME loginPage=new LoginPageME();
+        LoginPage loginPage=new LoginPage();
         loginPage.login();
         //BrowserUtils.wait(4);
         String title=driver.getTitle();

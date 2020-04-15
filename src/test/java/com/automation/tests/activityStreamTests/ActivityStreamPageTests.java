@@ -1,13 +1,14 @@
-package com.automation.tests;
+package com.automation.tests.activityStreamTests;
 
 
-import com.automation.pages.LoginPage;
 import com.automation.pages.ActivityStream.ActivityStreamPage;
+import com.automation.pages.LoginPage;
+import com.automation.tests.AbstractBaseTestDONT_TOUCH;
 import com.automation.utilities.BrowserUtilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ActivityStreamPageTests extends AbstractBaseTest {
+public class ActivityStreamPageTests extends AbstractBaseTestDONT_TOUCH {
     LoginPage loginPage = new LoginPage();
     ActivityStreamPage activityStreamPage = new ActivityStreamPage();
 
