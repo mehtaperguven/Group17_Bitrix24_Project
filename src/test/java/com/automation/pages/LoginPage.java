@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class LoginPage extends AbstractBasePageDONT_TOUCH {
-
+//new lineeeee
 
     @FindBy(css = "[placeholder='Login']")
     private WebElement username;
