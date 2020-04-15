@@ -25,10 +25,10 @@ public class ConfigurationReader {
     }
 //this method returns property value from configuration.properties file
 
-public static String getProperty(String keyName){
+    public static String getProperty(String keyName){
         return configFile.getProperty(keyName);
 
-}
+    }
 
 
 

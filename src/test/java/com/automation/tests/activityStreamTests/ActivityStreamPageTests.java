@@ -1,6 +1,5 @@
 package com.automation.tests.activityStreamTests;
 
-
 import com.automation.pages.ActivityStream.ActivityStreamPage;
 import com.automation.pages.LoginPage;
 import com.automation.tests.AbstractBaseTestDONT_TOUCH;

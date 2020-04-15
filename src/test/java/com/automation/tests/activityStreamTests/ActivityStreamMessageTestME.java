@@ -1,6 +1,7 @@
-package com.automation.tests;
+package com.automation.tests.activityStreamTests;
 
 import com.automation.pages.LoginPage;
+import com.automation.tests.AbstractBaseTestDONT_TOUCH;
 import com.automation.utilities.BrowserUtilities;
 import com.automation.utilities.ConfigurationReader;
 import com.automation.utilities.Driver;
@@ -14,8 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ActivityStreamMessageTestME extends AbstractPageBase {
-
+public class ActivityStreamMessageTestME extends AbstractBaseTestDONT_TOUCH {
 
     protected WebDriverWait wait;
     protected Actions actions;
@@ -59,19 +59,14 @@ public class ActivityStreamMessageTestME extends AbstractPageBase {
         System.out.println(">>>"+str1);
         String str2=driver.findElement(By.cssSelector("[class=\"feed-add-info-text\"]")).getText();
 
-
         Assert.assertEquals(str2,"You have already added your post");
 
     }
-
 
     @AfterMethod
     public void close(){
         BrowserUtilities.wait(3);
         Driver.closeDriver();
     }
-
-
-
 
 }
