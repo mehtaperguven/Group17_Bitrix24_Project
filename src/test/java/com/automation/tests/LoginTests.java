@@ -1,11 +1,10 @@
 package com.automation.tests;
 
-import com.automation.pages.LoginPage;
 import com.automation.utilities.BrowserUtilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTests extends AbstractBaseTest {
+public class LoginTests extends AbstractBaseTestDONT_TOUCH {
 
     @Test
     public void login(){

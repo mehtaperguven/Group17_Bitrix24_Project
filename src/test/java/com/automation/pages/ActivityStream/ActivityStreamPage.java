@@ -1,10 +1,10 @@
 package com.automation.pages.ActivityStream;
 
-import com.automation.pages.AbstractBasePage;
+import com.automation.pages.AbstractBasePageDONT_TOUCH;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ActivityStreamPage extends AbstractBasePage {
+public class ActivityStreamPage extends AbstractBasePageDONT_TOUCH {
 
     @FindBy(xpath = "//tbody//span[text()='Message']")
     private WebElement sendMessage;
