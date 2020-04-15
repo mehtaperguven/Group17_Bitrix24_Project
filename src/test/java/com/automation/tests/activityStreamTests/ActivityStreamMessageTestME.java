@@ -1,7 +1,6 @@
 package com.automation.tests;
 
-import com.automation.pages.AbstractPageBase;
-import com.automation.pages.LoginPageME;
+import com.automation.pages.LoginPage;
 import com.automation.utilities.BrowserUtilities;
 import com.automation.utilities.ConfigurationReader;
 import com.automation.utilities.Driver;
@@ -36,7 +35,7 @@ public class ActivityStreamMessageTestME extends AbstractPageBase {
     public void test1(){
         //send message, if you send more than 1 same message verify that warning message appears
 
-        LoginPageME loginPage=new LoginPageME();
+        LoginPage loginPage=new LoginPage();
         loginPage.login();
         //BrowserUtils.wait(4);
         String title=driver.getTitle();
