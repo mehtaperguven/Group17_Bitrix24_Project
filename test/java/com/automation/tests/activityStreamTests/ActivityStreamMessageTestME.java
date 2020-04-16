@@ -47,6 +47,9 @@ public class ActivityStreamMessageTestME extends AbstractBaseTest {
         String actual=driver.findElement(By.xpath("//span[contains(text(),\"Send message\")]")).getText();
         Assert.assertEquals(actual,expected);
         extentTest.pass("message has been sent successfully");
+
+    // hello thanks
+
     }
 
 
