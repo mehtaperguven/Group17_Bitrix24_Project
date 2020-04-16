@@ -20,7 +20,7 @@ public class ActivityStreamMessageTestME extends AbstractBaseTest {
         System.out.println("title is " + title);
         Assert.assertEquals(title, "Portal");
         extentTest.pass("Title is verified");
-//.....................................................
+//...............................
     }
 
     @Test
