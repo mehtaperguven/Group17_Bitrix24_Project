@@ -70,6 +70,6 @@ public abstract class AbstractBaseTestDONT_TOUCH {
             extentTest.skip(testResult.getName());
         }
         BrowserUtilities.wait(3);
-        Driver.closeDriver();
+       driver.close();
     }
 }
