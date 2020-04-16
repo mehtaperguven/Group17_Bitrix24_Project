@@ -27,6 +27,7 @@ public class EmployeesPage extends AbstractBasePageDONT_TOUCH {
  public String getcompanyStructure(){
      BrowserUtilities.waitForPageToLoad(20);
      return companyStructure.getText();
+     //New line
 
 }
 
