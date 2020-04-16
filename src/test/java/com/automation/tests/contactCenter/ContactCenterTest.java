@@ -39,13 +39,15 @@ public class ContactCenterTest extends AbstractBaseTestDONT_TOUCH {
         BrowserUtilities.wait(2);
         contactCenterPage.navigateTo( "Contact Center" );
         contactCenterPage.clickToMail();
-        driver.navigate().to( "https://login1.nextbasecrm.com/services/contact_center/" );
-        contactCenterPage.getMailTitleText();
-       String title =  driver.findElement( By.xpath( "//span[contains(text(),'Mailbox Integration')]" ) ).getText();
 
-
-
-       Assert.assertEquals(title, "Mailbox Integration");
+        loginPage.navigateTo("Mail");
+//        driver.navigate().to( "https://login1.nextbasecrm.com/services/contact_center/" );
+//        contactCenterPage.getMailTitleText();
+//       String title =  driver.findElement( By.xpath( "//span[contains(text(),'Mailbox Integration')]" ) ).getText();
+//
+//
+//
+//       Assert.assertEquals(title, "Mailbox Integration");
 
     }
 

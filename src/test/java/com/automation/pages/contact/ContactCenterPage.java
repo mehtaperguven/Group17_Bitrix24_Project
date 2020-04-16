@@ -23,7 +23,6 @@ public class ContactCenterPage extends AbstractBasePageDONT_TOUCH {
     @FindBy(id = "'mail_connect_mb_email_field'")
     private WebElement gMailEmailBox;
 
-
     @FindBy(id = "'mail_connect_save_btn'")
     private WebElement gMailConnectBtn;
 
