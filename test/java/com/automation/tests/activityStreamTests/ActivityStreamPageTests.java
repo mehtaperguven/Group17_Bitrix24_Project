@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class ActivityStreamPageTests extends AbstractBaseTest {
     LoginPage loginPage = new LoginPage();
     ActivityStreamPage activityStreamPage = new ActivityStreamPage();
-
+/////////''''''''
     @Test
     public void topicIcon_test(){
         extentTest = extentReports.createTest("Verify Post Topic");
